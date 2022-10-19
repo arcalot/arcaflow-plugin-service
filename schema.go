@@ -537,7 +537,7 @@ var Schema = schema.NewCallableSchema(
                 input.Service.Metadata.GenerateName = "arcaflow-svc-plugin-"
             }
 
-            _, err = cli.CoreV1().Services(input.Service.Metadata.Namespace).Create(
+            srv, err := cli.CoreV1().Services(input.Service.Metadata.Namespace).Create(
                 context.Background(),
                 &v1.Service{
                     ObjectMeta: input.Service.Metadata,
@@ -550,7 +550,9 @@ var Schema = schema.NewCallableSchema(
                     fmt.Sprintf("failed to create service (%v)", err),
                 }
             }
-            return "success", SuccessOutput{}
+            return "success", SuccessOutput{
+                srv.Name,
+            }
         },
     ),
 )
