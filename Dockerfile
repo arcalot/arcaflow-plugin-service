@@ -10,5 +10,3 @@ COPY --from=build /src/service-plugin /service-plugin
 WORKDIR /
 ENTRYPOINT ["/service-plugin"]
 CMD []
-
-LABEL quay.expires-after=90d
