@@ -3,7 +3,7 @@ module arcaflow-plugin-service
 go 1.18
 
 require (
-	go.flow.arcalot.io/pluginsdk v0.0.0-20221018183136-b96f3ba32386
+	go.flow.arcalot.io/pluginsdk v0.0.0-20230215171423-910f77c96f75
 	k8s.io/api v0.25.3
 	k8s.io/apimachinery v0.25.3
 	k8s.io/client-go v0.25.3
