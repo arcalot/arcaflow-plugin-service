@@ -1,7 +1,8 @@
-package arcaflow_plugin_service
+package service
 
 import "go.flow.arcalot.io/pluginsdk/schema"
 
+// SuccessOutput struct for name
 type SuccessOutput struct {
 	Name string `json:"name"`
 }
@@ -28,6 +29,7 @@ var successOutputSchema = schema.NewScopeSchema(
 	),
 )
 
+// ErrorOutput struct for error
 type ErrorOutput struct {
 	Error string `json:"error"`
 }
