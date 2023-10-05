@@ -1,4 +1,4 @@
-// package for arcaflow_plugin_service.
+// Package Service package for arcaflow_plugin_service.
 package service
 
 import (
