@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - build_error
   pull_request:
 jobs:
   golangci-lint:
