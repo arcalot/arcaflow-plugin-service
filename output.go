@@ -1,4 +1,4 @@
-// Package Service package for arcaflow_plugin_service.
+// Package service package for arcaflow_plugin_service.
 package service
 
 import "go.flow.arcalot.io/pluginsdk/schema"

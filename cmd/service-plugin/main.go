@@ -1,3 +1,4 @@
+// Package main for arcaflow_plugin_service.
 package main
 
 import (
