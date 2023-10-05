@@ -84,6 +84,7 @@ linters-settings:
       - k8s.io/
       - sigs.k8s.io/
       - golang.org/
+      - arcaflow-plugin-service
   govet:
     enable-all: true
     check-shadowing: false
