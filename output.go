@@ -3,51 +3,51 @@ package arcaflow_plugin_service
 import "go.flow.arcalot.io/pluginsdk/schema"
 
 type SuccessOutput struct {
-    Name string `json:"name"`
+	Name string `json:"name"`
 }
 
 var successOutputSchema = schema.NewScopeSchema(
-    schema.NewStructMappedObjectSchema[SuccessOutput](
-        "success",
-        map[string]*schema.PropertySchema{
-            "name": schema.NewPropertySchema(
-                dnsSubdomainName,
-                schema.NewDisplayValue(
-                    schema.PointerTo("Name"),
-                    schema.PointerTo("Name of the service that has just been created."),
-                    nil,
-                ),
-                true,
-                nil,
-                nil,
-                nil,
-                nil,
-                nil,
-            ),
-        },
-    ),
+	schema.NewStructMappedObjectSchema[SuccessOutput](
+		"success",
+		map[string]*schema.PropertySchema{
+			"name": schema.NewPropertySchema(
+				dnsSubdomainName,
+				schema.NewDisplayValue(
+					schema.PointerTo("Name"),
+					schema.PointerTo("Name of the service that has just been created."),
+					nil,
+				),
+				true,
+				nil,
+				nil,
+				nil,
+				nil,
+				nil,
+			),
+		},
+	),
 )
 
 type ErrorOutput struct {
-    Error string `json:"error"`
+	Error string `json:"error"`
 }
 
 var errorOutputSchema = schema.NewScopeSchema(
-    schema.NewStructMappedObjectSchema[ErrorOutput](
-        "error",
-        map[string]*schema.PropertySchema{
-            "error": schema.NewPropertySchema(
-                schema.NewStringSchema(nil, nil, nil),
-                schema.NewDisplayValue(
-                    schema.PointerTo("Error message"), nil, nil,
-                ),
-                true,
-                nil,
-                nil,
-                nil,
-                nil,
-                nil,
-            ),
-        },
-    ),
+	schema.NewStructMappedObjectSchema[ErrorOutput](
+		"error",
+		map[string]*schema.PropertySchema{
+			"error": schema.NewPropertySchema(
+				schema.NewStringSchema(nil, nil, nil),
+				schema.NewDisplayValue(
+					schema.PointerTo("Error message"), nil, nil,
+				),
+				true,
+				nil,
+				nil,
+				nil,
+				nil,
+				nil,
+			),
+		},
+	),
 )
