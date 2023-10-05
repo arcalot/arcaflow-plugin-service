@@ -1,3 +1,4 @@
+// package for arcaflow_plugin_service.
 package service
 
 import (
@@ -473,7 +474,7 @@ var inputSchema = schema.NewScopeSchema(
 	objectMeta,
 )
 
-// Pointer to new callable schema
+// Pointer to new callable schema.
 var Schema = schema.NewCallableSchema(
 	schema.NewCallableStep[Input](
 		"create",
