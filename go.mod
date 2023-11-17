@@ -3,15 +3,13 @@ module arcaflow-plugin-service
 go 1.18
 
 require (
-	go.flow.arcalot.io/pluginsdk v0.0.0-20230215171423-910f77c96f75
+	go.flow.arcalot.io/pluginsdk v0.5.1
 	k8s.io/api v0.24.9
 	k8s.io/apimachinery v0.24.9
 	k8s.io/client-go v0.24.9
 )
 
 require (
-	github.com/PuerkitoBio/purell v1.1.1 // indirect
-	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/emicklei/go-restful/v3 v3.9.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.5.0 // indirect
@@ -33,7 +31,6 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
-	go.arcalot.io/log v1.2.0 // indirect
 	go.arcalot.io/log/v2 v2.0.0 // indirect
 	golang.org/x/net v0.17.0 // indirect
 	golang.org/x/oauth2 v0.8.0 // indirect
