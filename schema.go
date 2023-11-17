@@ -504,7 +504,7 @@ var Schema = schema.NewCallableSchema(
 			schema.PointerTo("Create a Kubernetes service with the given specification."),
 			nil,
 		),
-		func(input Input) (string, any) {
+		func(ctx context.Context, input Input) (string, any) {
 			connectionConfig := restclient.Config{
 				Host:    input.Connection.Host,
 				APIPath: input.Connection.APIPath,
