@@ -3,6 +3,7 @@ module arcaflow-plugin-service
 go 1.21
 
 require (
+	go.arcalot.io/assert v1.8.0
 	go.flow.arcalot.io/pluginsdk v0.12.0
 	k8s.io/api v0.24.9
 	k8s.io/apimachinery v0.24.9
