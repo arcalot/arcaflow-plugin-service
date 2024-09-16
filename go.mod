@@ -5,9 +5,9 @@ go 1.22.6
 require (
 	go.arcalot.io/assert v1.8.0
 	go.flow.arcalot.io/pluginsdk v0.13.0
-	k8s.io/api v0.31.0
-	k8s.io/apimachinery v0.31.0
-	k8s.io/client-go v0.31.0
+	k8s.io/api v0.31.1
+	k8s.io/apimachinery v0.31.1
+	k8s.io/client-go v0.31.1
 )
 
 require (
